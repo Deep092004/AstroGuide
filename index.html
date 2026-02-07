@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AstroGuide | Know Your Destiny</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🔮 AstroGuide</h1>
+    <p class="subtitle">Basic project, Big learning ✨</p>
+
+    <form id="astroForm">
+      <div class="row">
+        <input type="text" id="firstName" placeholder="First Name" required />
+        <input type="text" id="lastName" placeholder="Last Name" required />
+      </div>
+
+      <div class="row">
+        <input type="number" id="date" placeholder="Date (DD)" min="1" max="31" required />
+        <input type="number" id="month" placeholder="Month (MM)" min="1" max="12" required />
+        <input type="number" id="year" placeholder="Year (YYYY)" min="1900" required />
+      </div>
+
+      <button type="submit">Reveal My Astrology ✨</button>
+    </form>
+
+    <div id="result" class="result hidden">
+      <h2>Hello <span id="fullName"></span> 🌟</h2>
+      <p><strong>Zodiac Sign:</strong> <span id="zodiac"></span></p>
+      <p><strong>Life Path Number:</strong> <span id="lifePath"></span></p>
+      <p class="reading" id="reading"></p>
+    </div>
+  </div>
+
+  <script src="first.js"></script>
+</body>
+</html>
